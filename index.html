@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/snake.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    
+    <title>Snake Game</title>
+</head>
+<body>
+    <h1 class="display-4 text-center title">Snake Game <img src="img/snake.png" alt="Snake-Game" width="4%"></h1>
+    <div class="row">
+        <div id="game" class="col-md-6 col-sm-12 game">
+            <canvas id="snake" width="512" height="512"></canvas>
+        </div>
+        <div id="instructions" class="col-md-6 col-sm-12">
+            <h2 class="display-5 font-italic text-center sub-title">Instruções <i class="fas fa-info-circle"></i></h2>
+            <div class="instructionsMenu">
+                <h2 class="display-3 text-center sub-title">Bem vindo ao SNAKE GAME</h2>
+                <p class="text-justify margin">O famoso jogo da cobrinha, venha recordar desse game marcante.
+                    Esse projeto foi desenvolvido na aula "Recriando o jogo da cobrinha em JavaScript", na plataforma <b><a href="http://https://digitalinnovation.one/" target="_blank" rel="digitalinnovation" style="color: #FFCA0C">Digital Innovation One</a></b>.
+                    Ministrado pela <b>Gabriela Pinheiro</b>, Front-End Developer, B8One.
+                </p>
+                <p class="margin text">
+                    Para iniciar o jogo clique em "Start Game".
+                </br>
+                Para reiniciar o jogo clique em "Restart".
+                </br>
+                Verifique a sua Pontuação.
+                </br>
+                Mova a cobra com as setas ou no teclado:
+                </br>
+                <i class="fas fa-arrow-up"></i><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i>
+                </br>
+                <h2 class="display-3 setas">W                S               A               D</h2>
+                </p>
+                <p class="display-4 text-center">Aproveite o jogo!</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h2 class="display-5 font-italic text-center sub-title">Game Menu <i class="fas fa-gamepad"></i></h2>
+            <div class="row text-center">
+                <div class="col-md-6 div-button">
+                    <button type="button" onclick="start()" class='botao'>Start Game <i class="fas fa-play-circle"></i></button>
+                </div>
+                <div class="col-md-6 div-button">
+                    <button type="button" onclick="reload()" class='botao'>Restart Game <i class="fas fa-redo-alt"></i></button>
+                </div>
+            </div>
+            <h3 id="points" class="display-6 font-italic text-center points">Sua Pontuação ( 0 )</h3>
+            <h2 id="game-mode" class="text-center modeGame" style="color: lightgreen; display: none;">Clássico</h2>
+            <h3 class="display-4 text-center myName">Desenvolvido por </br><b>Stenio Dias Rapchan</b></h3>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/d0d4bfe60e.js" crossorigin="anonymous"></script>
+</body>
+</html>
